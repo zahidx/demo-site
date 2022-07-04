@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+section{
+    padding: 100px 0;
+
+}
+
+/* Navigation style */
+.navbar {
+    position: fixed;
+    width: 100%;
+    font-family: 'ubuntu', sans-serif;
+    padding: 15px 0;
+    background-color: rgb(12, 0, 68);
+    z-index: 999;
+}
+
+
+.navbar .sticky {
+    background-color: black;
+    padding: 15px 0;
+
+}
+
+.navbar .menu li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: all 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: blueviolet;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.navbar .logo a{
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.navbar .logo i{
+    color: blue;
+}
+
+.navbar .logo span{
+    color: #fff;
+    text-shadow: hotpink 3px 3px 3px;
+}
+
+.navbar .logo a:hover{
+    font-size: 40px ;
+    color: green;
+}
+
+
+.navbar .menu li {
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+
+.max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.navbar .menu-btn .fas{
+    font-size: 30px;
+    color: #fff;
+}
+
+/* Home section style */
+.home {
+    display: flex;
+    background: linear-gradient(rgba(0,0,256,0.5), rgba(0,0,256,0.5)), url(photos/banner.png) no-repeat center;
+    height: 100vh;
+    min-height: 500px;
+    font-family: 'Pair Play', serif;
+    background-size: cover;
+}
+
+.home .home-content{
+    font-size: 50px;
+    padding-top: 380px;
+    color: white;
+    text-shadow: hotpink 3px 3px 3px;
+    margin-left: 10px;
+
+}
+
+.menu-btn{
+    display: none;
+
+}
+
+
+/* Featured styles */
+section .title{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+section .title::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    background: #333;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section .title::after{
+    content: "featured";
+    position: absolute;
+    background: #333;
+    bottom: -12px;
+    left: 50%;
+    color: red;
+    background: white;
+    padding: 5px;
+    font-size: 20px;
+    transform: translateX(-50%);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.swiper{
+    width: 65%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.swiper-slide img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* nature style */
+section .max-width .card{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section .max-width .card img{
+    width: 420px;
+    height: 250px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive media queries */
+@media(max-width: 700px){
+    .menu-btn{
+        display: inline-block; 
+    }
+    .max-width{
+        padding: 0 50px;
+    }
+    .navbar .menu{
+        position: fixed;
+        background: black;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        text-align: center;
+        padding: 80px;
+        transition: all 0.4s ease;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .navbar .menu li a:hover{
+        font-size: 26px;
+    }
+
+    .menu-btn{
+        display: block;
+        z-index: 9999;
+    }
+
+    .navbar .menu.active{
+        left: 0;
+    }
+
+    .menu-btn i.active::before{
+        content: "\f00d";
+    }
+}

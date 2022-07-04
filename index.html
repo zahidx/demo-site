@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0dca5faf70.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <title>horizon_views</title>
+</head>
+
+<body>
+    <!--Navigation section-->
+    <div class="navbar">
+        <div class="max-width">
+            <div class="logo">
+                <a href="#">
+                    <i class="fa fa-camera"></i>
+
+                    <span>horizon_views</span></a>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Home </a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Live Streaming</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Home section-->
+    <section class="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Meet</div>
+                <div class="text-2">professional</div>
+                <div class="text-3">photography</div>
+            </div>
+        </div>
+    </section>
+
+    <!--Featured section-->
+    <section class="feature">
+        <h2 class="title">Latest photo</h2>
+        <div class="container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="photos/image1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="photos/image2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="photos/image3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="photos/image4.jpg" alt=""></div>
+
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--nature section-->
+    <section class="nature">
+        <h2 class="title">Nature Photo</h2>
+        <div class="max-width">
+            <div class="card">
+                <img src="photos/nature1.jpg" alt="">
+                <img src="photos/nature2.jpg" alt="">
+                <img src="photos/nature3.jpg" alt="">
+
+            </div>
+        </div>
+
+        <div class="max-width">
+            <div class="card">
+                <img src="photos/nature4.jpg" alt="">
+                <img src="photos/nature5.jpg" alt="">
+                <img src="photos/nature6.jpg" alt="">
+
+            </div>
+        </div>
+
+        <div class="max-width">
+            <div class="card">
+                <img src="photos/nature7.jpg" alt="">
+                <img src="photos/nature8.jpg" alt="">
+                <img src="photos/nature9.jpg" alt="">
+
+            </div>
+        </div>
+
+        <div class="max-width">
+            <div class="card">
+                <img src="photos/nature10.jpg" alt="">
+                <img src="photos/nature11.jpg" alt="">
+                <img src="photos/nature12.jpg" alt="">
+
+            </div>
+        </div>
+
+        <div class="max-width">
+            <div class="card">
+                <img src="photos/nature13.jpg" alt="">
+                <img src="photos/nature14.jpg" alt="">
+                <img src="photos/nature15.jpg" alt="">
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <script src="in.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });</script>
+
+</body>
+
+</html>
